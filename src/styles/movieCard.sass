@@ -1,0 +1,39 @@
+@use './variables'
+.movie-card-container
+    width: 200px
+    padding: 10px 0px
+    .movie-card-img
+        width: 100%
+        height: 300px
+        object-fit: cover
+    .movie-card
+        width: 200px
+        height: 80px    
+        &-btn
+            width: 100%
+            padding: 8px 0px  
+            background-color: #00e1ff
+            border: 1px solid variables.$colorPrincipal
+            border-radius: 3px
+            transition: all .3s linear
+            cursor: pointer
+            .link
+                text-decoration: none
+                color: #000000
+            &:hover
+                background-color: #000000
+                color: variables.$colorPrincipal
+                border: 1px solid variables.$colorPrincipal
+                .link
+                    color: variables.$colorPrincipal
+        &-title
+            font-size: .9rem    
+            color: #fff 
+            height: 30px
+            margin: 3px 5px
+        &-vote    
+            color: #fff
+            margin: 8px 5px 0px 5px
+            &-star
+                color: variables.$colorPrincipal
+                transform: translate(-2px,1px)

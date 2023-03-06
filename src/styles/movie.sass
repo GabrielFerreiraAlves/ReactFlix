@@ -1,0 +1,35 @@
+@use './variables'
+@use './mixins'
+
+.banner-container
+    color: variables.$colorPrincipal    
+    .banner
+        img
+            height: 90vh
+            display: block
+            margin: 10px auto
+    .info
+        text-align: center
+        background-color: variables.$lightDark
+        width: 98%
+        margin: 10px auto
+        border-radius: 10px
+        padding: 15px 0px
+        h1
+            color: variables.$colorPrincipal  
+            font-size: 1.7rem
+        p
+            color: #fff
+            font-weight: 400    
+        .genres
+            @include mixins.flex-config
+            gap: 5px
+        .overview
+            width: 60%
+            margin: 0 auto
+            font-weight: 300
+            @include mixins.mobile
+                width: 98%
+        .vote
+            &-star 
+                color: variables.$colorPrincipal          
