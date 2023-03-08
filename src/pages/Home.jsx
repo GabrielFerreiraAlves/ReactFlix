@@ -50,7 +50,7 @@ const Home = () => {
       breakpoints={
         {
           100: {
-            slidesPerView: 1.6
+            slidesPerView: 1.4
           },
           450:{
             slidesPerView: 2
@@ -89,7 +89,7 @@ const Home = () => {
       breakpoints={
         {
           100: {
-            slidesPerView: 1.6
+            slidesPerView: 1.4
           },
           450:{
             slidesPerView: 2
