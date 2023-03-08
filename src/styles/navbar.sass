@@ -1,4 +1,5 @@
 @use 'variables'
+@use 'mixins'
 
 @keyframes icon 
     0%
@@ -15,6 +16,13 @@ header
     max-width: 1400px
     background-color: #000000
     padding: 0px 15px
+    .responsive
+        display: none
+        @include mixins.mobile
+            display: block
+    .mobile
+        @include mixins.mobile
+            display: none
     a
         color: variables.$colorPrincipal
         text-decoration: none
