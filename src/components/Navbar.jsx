@@ -20,7 +20,8 @@ const Navbar = () => {
   }
   return (
     <header>
-       <a href=""><Link to="/"><FaReact className="icon"/>React<span>Flix</span></Link></a>
+       <a href="" className="mobile"><Link to="/"><FaReact className="icon"/></Link></a>
+       <a href="" className="responsive"><Link to="/"><FaReact className="icon"/>React<span>Flix</span></Link></a>
        <form onSubmit={handleSubmit}>
         <input type="text" name="" id="" placeholder="Digite um nome de filme" onChange={(e) => setSearch(e.target.value)} value={search}/>
         <button type='submit'><BsSearch/></button>
