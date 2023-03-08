@@ -1,4 +1,5 @@
 @use './variables'
+@use './mixins'
 .movie-card-container
     width: 200px
     padding: 10px 0px
@@ -8,7 +9,9 @@
         object-fit: cover
     .movie-card
         width: 200px
-        height: 80px    
+        height: 80px   
+        @include mixins.mobile
+            height: 90px
         &-btn
             width: 100%
             padding: 8px 0px  
@@ -31,6 +34,9 @@
             color: #fff 
             height: 30px
             margin: 3px 5px
+            @include mixins.mobile
+                font-size: .8rem
+                font-weight: 500    
         &-vote    
             color: #fff
             margin: 8px 5px 0px 5px
