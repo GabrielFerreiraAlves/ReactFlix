@@ -52,6 +52,9 @@ const Home = () => {
           100: {
             slidesPerView: 1.6
           },
+          450:{
+            slidesPerView: 2
+          },    
           550: {
             slidesPerView: 2.3
           },
@@ -88,6 +91,9 @@ const Home = () => {
           100: {
             slidesPerView: 1.6
           },
+          450:{
+            slidesPerView: 2
+          }, 
           550: {
             slidesPerView: 2.3
           },
